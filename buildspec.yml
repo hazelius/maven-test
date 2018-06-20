@@ -15,6 +15,7 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
+      - mvn --version
 #      - docker login –u User –p $LOGIN_PASSWORD
   build:
     commands:
