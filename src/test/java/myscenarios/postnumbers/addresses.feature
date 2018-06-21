@@ -9,12 +9,6 @@ Given path 'jzip/X0401/JSON/064/0941.js'
 When method get
 Then status 200
 
-* def first = response[0]
-
-Given path 'jzip/X0401/JSON/064/0941.js', first.state
-When method get
-Then status 200
-
 Scenario: create a user and then get it by id
 
 * def user =
