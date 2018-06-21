@@ -8,7 +8,7 @@ Scenario: get post number
 Given path 'jzip/X0401/JSON/064/0941.js'
 When method get
 Then status 200
-And match $ == { "state":"1", "stateName":"北海道", "city":"札幌市中央区", "street":"旭ケ丘" }
+And match $ == '{ "state":"1", "stateName":"北海道", "city":"札幌市中央区", "street":"旭ケ丘" }'
 
 Scenario: create a user and then get it by id
 
